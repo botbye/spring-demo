@@ -45,7 +45,7 @@ public class DemoController {
                 extractHeaders(request)
         );
 
-        if (botbyeResponse.getResult().isBanRequired() || botbyeResponse.getResult().isBot()) {
+        if (!botbyeResponse.getResult().isAllowed()) {
             return ResponseEntity
                     .status(403)
                     .body(botbyeResponse.getError().getMessage());
