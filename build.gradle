@@ -13,14 +13,10 @@ java {
 
 repositories {
     mavenCentral()
-
-    maven {
-        url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
-    }
 }
 
 dependencies {
-    implementation 'com.botbye:java-module:0.0.1-SNAPSHOT'
+    implementation 'com.botbye:java-module:2.0.0'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

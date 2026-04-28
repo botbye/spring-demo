@@ -11,7 +11,7 @@ public class AppConfig {
     @Bean
     public Botbye botbye() {
         BotbyeConfig config = new BotbyeConfig.Builder()
-                .serverKey("your-botbye-server-key")
+                .serverKey("00000000-0000-0000-0000-000000000000") // Use your project server-key
                 .build();
 
         return new Botbye(config);
